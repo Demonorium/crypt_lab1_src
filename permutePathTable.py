@@ -7,7 +7,6 @@ class PermutePathTable:
         size = len(target)
         for j in range(self.size_x):
             for i in range(math.ceil(size/self.size_x)):
-            
                 index=self.size_x*i+j
                 if index >= size: result += ' '
                 else: result += target[index]

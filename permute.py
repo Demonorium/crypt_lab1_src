@@ -18,11 +18,11 @@ class Permuter:
             self.table[table[i]] = i
         
     def encode(self, target: str):
-        result = ''
+        result = []
         for i in range(len(target)):
             result += _get(target, self.table[i])
         
-        return result
+        return ''.join(str(e) for e in result)
     
     def decode(self, target: str):
         result = ''
